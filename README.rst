@@ -1,10 +1,10 @@
 django-remote-debug
 ===================
-A wrapper to Visual Studio remote debugging server for python
+Python Visual Studio remote debugging server for Django
 
 Requirements
 ------------
-1. ptvsd 3.0.0 installed on local machine
+1. ptvsd 4.0.0 or above
 
 Quick start
 -----------
