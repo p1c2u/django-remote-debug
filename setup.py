@@ -34,7 +34,7 @@ setup(
     packages=find_packages(include=('django_remote_debug*',)),
     install_requires=[
         'ptvsd>=4.0.0',
-    ]
+    ],
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",

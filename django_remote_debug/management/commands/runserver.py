@@ -1,4 +1,6 @@
-from django.core.management.commands.runserver import BaseRunserverCommand
+from django.contrib.staticfiles.management.commands.runserver import (
+    Command as BaseRunserverCommand
+)
 from django.core.management.base import CommandError
 from django.conf import settings
 
@@ -32,8 +34,8 @@ class Command(BaseRunserverCommand):
                 raise CommandError('PTVSd not installed')
             else:
                 ptvsd.enable_attach(
-                    self.remote_debug_pass,
-                    address=(self.remote_debug_addr, self.remote_debug_port)
+                    address=(self.remote_debug_addr, self.remote_debug_port),
+                    redirect_output=True
                 )
 
         super(Command, self).inner_run(*args, **options)
