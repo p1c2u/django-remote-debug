@@ -9,5 +9,5 @@ Requirements
 Quick start
 -----------
 1. Install django-remote-debug
-2. Add django_ptvsd to your INSTALLED_APPS settings
+2. Add django_remote_debug to your INSTALLED_APPS settings
 3. ./manage.py runsever --remote-debug --nothreading
