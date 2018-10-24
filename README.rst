@@ -1,5 +1,5 @@
-django-ptvsd
-==================
+django-remote-debug
+===================
 A wrapper to Visual Studio remote debugging server for python
 
 Requirements
@@ -8,6 +8,6 @@ Requirements
 
 Quick start
 -----------
-1. Install django-ptvsd
+1. Install django-remote-debug
 2. Add django_ptvsd to your INSTALLED_APPS settings
 3. ./manage.py runsever --remote-debug --nothreading
